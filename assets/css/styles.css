@@ -320,9 +320,14 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 120px 0px 120px 0px;
+  padding: 120px 0px 60px 0px;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 778px) {
+  .main__banner {
+    padding-bottom: 0;
+  }
 }
 .main__banner:after {
   content: "";
@@ -431,7 +436,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 140px 0 120px 0;
+  padding: 60px 0 60px 0;
 }
 .about__us .left__image {
   margin-right: 40px;
@@ -615,6 +620,11 @@ body {
 }
 .our__blog .section__image img {
   max-width: 270px;
+}
+@media (max-width: 1000px) {
+  .our__blog .section__image {
+    display: none;
+  }
 }
 .our__blog .left__image {
   position: relative;
