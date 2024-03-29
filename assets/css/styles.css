@@ -297,6 +297,7 @@ body {
   height: 40px;
   border: transparent;
   letter-spacing: 1px;
+  padding: 0 7px;
 }
 .header__area .main__nav .nav .nav__links a.active,
 .header__area .main__nav .mobile__nav .nav__links a.active {
