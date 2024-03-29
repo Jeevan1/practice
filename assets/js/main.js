@@ -1,3 +1,4 @@
+
 const nav = document.querySelector('.mobile__menu');
 const header = document.querySelector('.header__area');
 const menu = document.getElementById('menu');
