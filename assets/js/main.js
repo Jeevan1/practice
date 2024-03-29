@@ -2,9 +2,17 @@
 const nav = document.querySelector('.mobile__menu');
 const header = document.querySelector('.header__area');
 const menu = document.getElementById('menu');
+const navLinks = document.querySelectorAll('.nav__links');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        showMenu();
+    });
+})
 
 
 function showMenu(){
+    
     if(menu.classList.contains('fa-xmark')){
         menu.classList.replace('fa-xmark','fa-bars');
         nav.classList.remove('show');

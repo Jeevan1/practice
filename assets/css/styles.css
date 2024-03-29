@@ -97,6 +97,9 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 a {
@@ -165,6 +168,20 @@ body {
 }
 .section__heading p {
   font-weight: 400;
+}
+@media (max-width: 1000px) {
+  .section__heading {
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center !important;
+  }
+  .section__heading h2 {
+    width: 100%;
+    text-align: center !important;
+  }
+  .section__heading p {
+    width: 100%;
+  }
 }
 
 .cyan__button a {
@@ -378,7 +395,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 120px 0px 60px 0px;
+  padding: 60px 0px 60px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -485,16 +502,12 @@ body {
 .main__banner .right__content {
   padding-bottom: 55px;
 }
-#about {
-  margin-top: 60px;
-}
-
 .about__us {
   background-image: url("../images/about-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 60px 0 60px 0;
+  padding: 120px 0 60px 0;
 }
 .about__us .left__image {
   margin-right: 40px;
@@ -545,8 +558,17 @@ body {
     padding: 30px 0;
   }
 }
+.our__services {
+  padding-top: 120px;
+}
 .our__services .left__image {
   margin-right: 45px;
+}
+@media (max-width: 1000px) {
+  .our__services .left__image {
+    margin-bottom: 45px;
+    margin-right: 0;
+  }
 }
 .our__services .right__service .section__heading h2 {
   margin-right: 100px;

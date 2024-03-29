@@ -91,6 +91,7 @@ hgroup {
     box-sizing: border-box;
 }
 
+
 html,
 body {
     font-family: 'Poppins', sans-serif;
@@ -99,6 +100,10 @@ body {
     -ms-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
 }
 
 a {
@@ -164,10 +169,23 @@ body {
                 color: $orange;
             }
         }
+        
     }
 
     p {
         font-weight: 400;
+    }
+    @media(max-width: 1000px){
+        width: 100%;
+        padding-bottom: 30px;
+        text-align: center !important;
+        h2{
+            width: 100%;
+            text-align: center !important;
+        }
+        p{
+            width: 100%;
+        }
     }
 }
 
@@ -410,7 +428,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 120px 0px 60px 0px;
+    padding: 60px 0px 60px 0px;
     position: relative;
     overflow: hidden;
 
@@ -534,16 +552,14 @@ body {
 }
 
 // about us 
-#about {
-    margin-top: 60px;
-}
+
 
 .about__us {
     background-image: url('../images/about-bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 60px 0 60px 0;
+    padding: 120px 0 60px 0;
 
     .left__image {
         margin-right: 40px;
@@ -619,8 +635,13 @@ body {
 
 // services 
 .our__services {
+    padding-top: 120px;
     .left__image {
         margin-right: 45px;
+        @media(max-width: 1000px){
+            margin-bottom: 45px;
+            margin-right: 0;
+        }
     }
 
     .right__service {
